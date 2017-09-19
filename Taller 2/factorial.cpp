@@ -6,12 +6,11 @@
 
 int Fact(int a){
   int i,c=1;
-  for (i=1 ; i<=a ; i++)
+  for(i=1 ; i<=a ; i++)
     {
-         c=i*c;
+     c=i*c;
     }
-    return c;
-    
+    return c;    
 }
 
 int main() {
