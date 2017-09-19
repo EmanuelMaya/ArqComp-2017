@@ -1,23 +1,30 @@
-#include <iostream> 
-#include <string> 
+#include <stdio.h>
+#include <stdlib.h>
 
-using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main() { 
 
-	int factorial=0; 
-	int n=0;
-	cout<<"Ingresar numero para calcular el factorial: "; 
-	cin>>n;
-	cin>>factorial; 
+int Fact(int a){
+  int i,c=1;
+  for (i=1 ; i<=a ; i++)
+    {
+         c=i*c;
+    }
+    return c;
+    
+}
 
-	int temp=factorial-1; 
-	int resultado=factorial; 
+int main() {
+	int x,y,z;
+	printf("Ingrese numero a calcular factorial\n");
+	scanf("%d",&x);
 
-	while (temp>=1) 
-	{ 
-		resultado=resultado*temp; 
-		temp--; 
-	} 
-	cout<<"El factorial de " << n << " es: " <<resultado<<endl; 
-} 
+	
+	z=Fact(x);
+
+	printf("la multiplicacion por sumas sucesivas es: %d\n",z);
+	system("pause");
+	
+	
+	return 0;
+}
