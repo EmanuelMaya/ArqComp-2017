@@ -22,7 +22,7 @@ int main() {
 	
 	z=Fact(x);
 
-	printf("la multiplicacion por sumas sucesivas es: %d\n",z);
+	printf("El factorial de %d es: %d\n",x,z);
 	system("pause");
 	
 	
